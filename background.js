@@ -1,3 +1,5 @@
 chrome.runtime.onInstalled.addListener(() => {
-    console.log("Extension quraşdırıldı!");
+    console.log("Extension successfully installed!");
 });
+
+

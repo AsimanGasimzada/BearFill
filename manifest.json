@@ -1,19 +1,29 @@
 {
-    "manifest_version": 3,
-    "name": "BearFill",
-    "version": "1.0",
-    "description": "Saytlardakı inputları avtomatik doldurur.",
-    "permissions": ["storage", "activeTab", "scripting"],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": "icons/icon.png"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": ["content.js"]
-      }
-    ],
-    "host_permissions": ["<all_urls>"]
-  }
-  
+  "manifest_version": 3,
+  "name": "BearFill",
+  "version": "1.1",
+  "description": "Automatically fills in inputs on websites.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "privacy_policy_url": "https://asimangasimzada.github.io/BearFill-PrivacyPolicy/BearFill%20Privacy%20Policy.html"
+
+}

@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="az">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Auto Filler</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h2>BearFill</h2>
+      <h2>Bear Fill</h2>
 
-        <div class="form-section">
-            <label for="form-list">📌 Formu seç:</label>
-            <select id="form-list">
-                <option value="">Form seç</option>
-            </select>
-        </div>
+      <div class="form-section">
+        <label for="form-list">📌 Select form:</label>
+        <select id="form-list">
+          <option value="">Select Form</option>
+        </select>
+      </div>
 
-        <div class="button-group">
-            <button id="edit-form">✏️ Dəyişdir</button>
-            <button id="fill-form">✅ Doldur</button>
-            <button id="delete-form">🗑️ Sil</button>
-        </div>
+      <div class="button-group">
+        <button id="edit-form">✏️ Edit</button>
+        <button id="fill-form">✅ Fill</button>
+        <button id="delete-form">🗑️ Delete</button>
+      </div>
 
-        <h3>📝 Sahələr</h3>
-        <div id="fields-container"></div>
+      <h3>📝 New Form</h3>
+      <div id="fields-container"></div>
 
-        <button id="add-field">➕ Yeni sahə</button>
+      <button id="add-field">➕ New area</button>
 
-        <h3>💾 Formları İdarə Et</h3>
-        <button id="save-form">💾 Formu Saxla</button>
-        <button id="clear-storage">🧹 Hamısını Sil</button>
+      <h3>💾 Manage Forms</h3>
+      <div class="buttons">
+        <button id="save-form">💾 Save Form</button>
+        <button id="clear-storage">🧹 Delete All</button>
+        <button id="random-fill">✨ Mix</button>
+      </div>
     </div>
 
     <script src="popup.js"></script>
-</body>
+  </body>
 </html>
-    
